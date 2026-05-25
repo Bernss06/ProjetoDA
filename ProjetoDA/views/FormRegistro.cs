@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjetoDA.views
 {
-    public partial class Registro : Form
+    public partial class FormRegistro : Form
     {
-        public Registro()
+        public FormRegistro()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
