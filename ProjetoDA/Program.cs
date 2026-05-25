@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,10 @@ namespace ProjetoDA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new views.FormLogin());
+            Application.Run(new views.FormRegistro());
+            Database.SetInitializer(
+                new DropCreateDatabaseIfModelChanges<ShoppingContext>()
+            );
         }
     }
 }
