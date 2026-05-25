@@ -1,6 +1,6 @@
 ﻿namespace ProjetoDA.views
 {
-    partial class Registro
+    partial class FormRegistro
     {
         /// <summary>
         /// Required designer variable.
@@ -44,7 +44,6 @@
             this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Criar conta";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -68,7 +67,6 @@
             this.label2.Size = new System.Drawing.Size(125, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Nome de Utilizador:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -87,6 +85,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Registro
             // 
@@ -101,7 +100,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Registro";
             this.Text = "Registro";
-            this.Load += new System.EventHandler(this.Registro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
