@@ -5,19 +5,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoDA
+namespace ProjetoDA.modelos
 {
     public class Utilizador
     {
-        public Utilizador()
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Nome { get; set; }
+        public string Password { get; set; }
+
+        public Utilizador() { }
+
+        public Utilizador(string username, string nome, string password)
         {
+            Username = username;
+            Nome = nome;
+            Password = password;
         }
 
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Password { get; set; }
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
-
-   
-
 }
+

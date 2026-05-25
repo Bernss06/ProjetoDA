@@ -8,11 +8,19 @@ namespace ProjetoDA
 {
     public class TipoArtigo
     {
-        public TipoArtigo()
+        public int Id { get; set; }
+        public string Categoria { get; set; } // Conforme o diagrama
+
+        public TipoArtigo() { }
+
+        public TipoArtigo(string categoria)
         {
+            Categoria = categoria;
         }
 
-        public int Id { get; set; }
-        public string Tipo { get; set; }
+        public override string ToString()
+        {
+            return Categoria;
+        }
     }
 }
