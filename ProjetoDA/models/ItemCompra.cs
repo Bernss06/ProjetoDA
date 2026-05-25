@@ -6,17 +6,33 @@ using System.Threading.Tasks;
 
 namespace ProjetoDA
 {
-    public class ItemCompra
+    // Classe Base
+    public abstract class ItemCompra
     {
-        public ItemCompra() { }
         public int Id { get; set; }
+        public int QuantidadeAdquirida { get; set; } // No diagrama está 'int'
+        public decimal PrecoUnitario { get; set; }
+
+        // Relações (O losango no diagrama indica que pertence a uma Compra, e a linha associa a Artigo)
         public Compra Compra { get; set; }
         public Artigo Artigo { get; set; }
-        public int IsPrevisto { get; set; }
-        public float QuantidadePrevista { get; set; }
-        public float QuantidadeReal { get; set; }
-        public float PrecoUnitario { get; set; }
-        public string Observacoes { get; set; } = string.Empty;
 
+        public ItemCompra() { }
+    }
+
+    // Subclasse: Item Previsto
+    public class ItemPrevisto : ItemCompra
+    {
+        public int QuantidadePrevista { get; set; } // No diagrama está 'int'
+
+        public ItemPrevisto() { }
+    }
+
+    // Subclasse: Item Não Previsto
+    public class ItemNaoPrevisto : ItemCompra
+    {
+        public string Observacoes { get; set; }
+
+        public ItemNaoPrevisto() { }
     }
 }
