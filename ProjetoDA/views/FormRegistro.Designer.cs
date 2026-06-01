@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnRegisto = new System.Windows.Forms.Button();
+            this.btnJatenho = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -79,19 +80,30 @@
             // 
             // btnRegisto
             // 
-            this.btnRegisto.Location = new System.Drawing.Point(146, 245);
+            this.btnRegisto.Location = new System.Drawing.Point(140, 245);
             this.btnRegisto.Name = "btnRegisto";
-            this.btnRegisto.Size = new System.Drawing.Size(200, 35);
+            this.btnRegisto.Size = new System.Drawing.Size(99, 35);
             this.btnRegisto.TabIndex = 5;
             this.btnRegisto.Text = "Registrar";
             this.btnRegisto.UseVisualStyleBackColor = true;
             this.btnRegisto.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // btnJatenho
+            // 
+            this.btnJatenho.Location = new System.Drawing.Point(245, 245);
+            this.btnJatenho.Name = "btnJatenho";
+            this.btnJatenho.Size = new System.Drawing.Size(115, 35);
+            this.btnJatenho.TabIndex = 6;
+            this.btnJatenho.Text = "Já tenho conta";
+            this.btnJatenho.UseVisualStyleBackColor = true;
+            this.btnJatenho.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 350);
+            this.Controls.Add(this.btnJatenho);
             this.Controls.Add(this.btnRegisto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -100,6 +112,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormRegistro";
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.FormRegistro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +126,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRegisto;
+        private System.Windows.Forms.Button btnJatenho;
     }
 }

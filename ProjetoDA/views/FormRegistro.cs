@@ -23,6 +23,16 @@ namespace ProjetoDA.views
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
+            // Verifica se algum dos campos está vazio ou apenas com espaços
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos!",
+                                "Campos Obrigatórios",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return; // Interrompe a execução do método aqui para não registar
+            }
+
             // Instancia o controlador existente, exatamente como na Ficha 9
             UtilizadorController utilizadorController = new UtilizadorController();
 
@@ -32,13 +42,40 @@ namespace ProjetoDA.views
             if (sucesso)
             {
                 MessageBox.Show("Utilizador registado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close(); // Fecha a janela de registo e volta ao Login
+                // Esconde a janela de registo
+                this.Hide();
+
+                // Cria e mostra a janela de Login
+                FormLogin login = new FormLogin();
+                login.ShowDialog(); // Utilizar ShowDialog() garante que o utilizador vai para a página de login
+
+                // Fecha esta janela de vez após fechar o login (opcional, para limpar memória)
+                this.Close();
             }
             else
             {
                 // Alerta caso o Username já exista na base de dados (Regra 4)
                 MessageBox.Show("Erro: Este Username já está a ser utilizado por outro membro!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            {
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormLogin login = new FormLogin();
+            login.Show();
+
+            // Esconde o formulário de registo
+            this.Hide();
+
+        }
+
+        private void FormRegistro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
