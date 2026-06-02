@@ -32,14 +32,16 @@ namespace ProjetoDA.views
                 MessageBox.Show("Login efetuado com sucesso!", "Bem-vindo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // (opcional) guardar utilizador logado
-                // Session.UserId = userId;
+                // Armazena o ID do utilizador na sessão
+                SessionManager.UtilizadorLogadoId = userId;
+
                 this.Hide();
 
                 Form1 form1 = new Form1();
-                form1.ShowDialog();// Utilizar ShowDialog() garante que o utilizador vai para a página de login
+                form1.ShowDialog();
 
-                // Fecha esta janela de vez após fechar o login (opcional, para limpar memória)
+                // Limpa a sessão ao fechar o login
+                SessionManager.ClearSession();
                 this.Close();
             }
             else

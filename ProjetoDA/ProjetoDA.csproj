@@ -82,6 +82,7 @@
     <Compile Include="models\ShoppingContext.cs" />
     <Compile Include="models\TipoArtigo.cs" />
     <Compile Include="models\Utilizador.cs" />
+    <Compile Include="SessionManager.cs" />
     <Compile Include="views\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
