@@ -112,7 +112,7 @@
             // 
             // btntipoartigo
             // 
-            this.btntipoartigo.Location = new System.Drawing.Point(31, 278);
+            this.btntipoartigo.Location = new System.Drawing.Point(31, 276);
             this.btntipoartigo.Name = "btntipoartigo";
             this.btntipoartigo.Size = new System.Drawing.Size(202, 42);
             this.btntipoartigo.TabIndex = 4;

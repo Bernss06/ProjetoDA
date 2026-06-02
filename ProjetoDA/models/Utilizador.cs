@@ -12,7 +12,7 @@ namespace ProjetoDA.modelos
         public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-
+     
         public Utilizador() { }
 
         public Utilizador(string username, string password)
