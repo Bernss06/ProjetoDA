@@ -18,7 +18,7 @@ namespace ProjetoDA
             Database.SetInitializer(new models.AppDbInitializer()); // Configura o inicializador da base de dados
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new views.Orcamento());
+            Application.Run(new views.Planeamento());
         }
     }
 }

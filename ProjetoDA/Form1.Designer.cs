@@ -136,6 +136,7 @@
             this.btnplaneamento.TabIndex = 2;
             this.btnplaneamento.Text = "Planeamento";
             this.btnplaneamento.UseVisualStyleBackColor = true;
+            this.btnplaneamento.Click += new System.EventHandler(this.btnplaneamento_Click);
             // 
             // btnorcamento
             // 
