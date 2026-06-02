@@ -124,15 +124,16 @@
             this.btnVoltarInicio.TabIndex = 0;
             this.btnVoltarInicio.Text = "<- Inicio";
             this.btnVoltarInicio.UseVisualStyleBackColor = true;
+            this.btnVoltarInicio.Click += new System.EventHandler(this.btnVoltarInicio_Click_1);
             // 
-            // Orçamento
+            // Orcamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Orçamento";
+            this.Name = "Orcamento";
             this.Text = "Orçamento";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
