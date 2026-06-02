@@ -17,7 +17,7 @@ namespace ProjetoDA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new views.FormRegistro());
+            Application.Run(new views.Orçamento());
             Database.SetInitializer(
                 new DropCreateDatabaseIfModelChanges<ShoppingContext>()
             );
