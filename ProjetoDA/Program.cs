@@ -15,12 +15,10 @@ namespace ProjetoDA
         [STAThread]
         static void Main()
         {
+            Database.SetInitializer(new models.AppDbInitializer()); // Configura o inicializador da base de dados
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new views.FormRegistro());
-            Database.SetInitializer(
-                new DropCreateDatabaseIfModelChanges<ShoppingContext>()
-            );
+            Application.Run(new views.Orcamento());
         }
     }
 }

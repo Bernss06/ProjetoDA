@@ -45,7 +45,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdCompras = new System.Windows.Forms.DataGridView();
             this.btnfecharcompra = new System.Windows.Forms.Button();
             this.btndetalhes = new System.Windows.Forms.Button();
             this.btnnovacompra = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCompras)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -112,7 +112,7 @@
             // 
             // btntipoartigo
             // 
-            this.btntipoartigo.Location = new System.Drawing.Point(31, 278);
+            this.btntipoartigo.Location = new System.Drawing.Point(31, 276);
             this.btntipoartigo.Name = "btntipoartigo";
             this.btntipoartigo.Size = new System.Drawing.Size(202, 42);
             this.btntipoartigo.TabIndex = 4;
@@ -183,7 +183,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(75, 19);
+            this.label5.Location = new System.Drawing.Point(105, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 5;
@@ -194,9 +194,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(25, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.Size = new System.Drawing.Size(74, 16);
             this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
+            this.label6.Text = "Disponivel:";
             // 
             // groupBox5
             // 
@@ -223,13 +223,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(22, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.Size = new System.Drawing.Size(46, 16);
             this.label4.TabIndex = 2;
-            this.label4.Text = "label4";
+            this.label4.Text = "Gasto:";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.dataGridView1);
+            this.groupBox7.Controls.Add(this.grdCompras);
             this.groupBox7.Controls.Add(this.btnfecharcompra);
             this.groupBox7.Controls.Add(this.btndetalhes);
             this.groupBox7.Controls.Add(this.btnnovacompra);
@@ -240,15 +240,15 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "groupBox7";
             // 
-            // dataGridView1
+            // grdCompras
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 218);
-            this.dataGridView1.TabIndex = 4;
+            this.grdCompras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdCompras.Location = new System.Drawing.Point(17, 22);
+            this.grdCompras.Name = "grdCompras";
+            this.grdCompras.RowHeadersWidth = 51;
+            this.grdCompras.RowTemplate.Height = 24;
+            this.grdCompras.Size = new System.Drawing.Size(674, 218);
+            this.grdCompras.TabIndex = 4;
             // 
             // btnfecharcompra
             // 
@@ -302,9 +302,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(24, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Total:";
             // 
             // groupBox3
             // 
@@ -330,7 +330,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(89, 44);
+            this.label8.Location = new System.Drawing.Point(121, 44);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 16);
             this.label8.TabIndex = 1;
@@ -341,9 +341,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(38, 44);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 16);
+            this.label7.Size = new System.Drawing.Size(77, 16);
             this.label7.TabIndex = 0;
-            this.label7.Text = "label7";
+            this.label7.Text = "Bem-Vindo,";
             // 
             // Form1
             // 
@@ -361,7 +361,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCompras)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -387,7 +387,7 @@
         private System.Windows.Forms.Button btninicio;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdCompras;
         private System.Windows.Forms.Button btnfecharcompra;
         private System.Windows.Forms.Button btndetalhes;
         private System.Windows.Forms.Button btnnovacompra;

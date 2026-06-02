@@ -66,6 +66,7 @@
     <Compile Include="controllers\OrcamentoController.cs" />
     <Compile Include="controllers\TipoArtigoController.cs" />
     <Compile Include="controllers\UtilizadorController.cs" />
+    <Compile Include="models\AppDbInitializer.cs" />
     <Compile Include="models\Artigo.cs" />
     <Compile Include="models\Compra.cs" />
     <Compile Include="Form1.cs">
@@ -93,6 +94,12 @@
     <Compile Include="views\FormRegistro.Designer.cs">
       <DependentUpon>FormRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Orcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Orcamento.Designer.cs">
+      <DependentUpon>Orcamento.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FormRegistro.resx">
       <DependentUpon>FormRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Orcamento.resx">
+      <DependentUpon>Orcamento.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
