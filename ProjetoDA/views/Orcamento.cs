@@ -27,7 +27,7 @@ namespace ProjetoDA.views
         {
             InitializeComponent();
             _orcamentoController = new OrcamentoController();
-            _utilizadorLogadoId = 0; // Substitua 0 pelo valor correto do utilizador logado
+            _utilizadorLogadoId = SessionManager.UtilizadorLogadoId;
             _mesSelecionado = DateTime.Now.Month;
             _anoSelecionado = DateTime.Now.Year;
 

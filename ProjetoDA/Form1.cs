@@ -19,7 +19,7 @@ namespace ProjetoDA
 
         private void btnorcamento_Click(object sender, EventArgs e)
         {
-            // Abre a view de Orçamento e esconde o Form1
+            // Abre a view de Orçamento com o ID do utilizador logado
             var orcamentoForm = new views.Orcamento();
             orcamentoForm.Show();
             this.Hide();
