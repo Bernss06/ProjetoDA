@@ -1,6 +1,6 @@
 ﻿namespace ProjetoDA.views
 {
-    partial class Orçamento
+    partial class Orcamento
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +31,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btndefinirOrçamento = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtOrçamento = new System.Windows.Forms.TextBox();
-            this.lblOrçamentos = new System.Windows.Forms.Label();
+            this.txtOrcamento = new System.Windows.Forms.TextBox();
+            this.lblOrcamentos = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,29 +64,29 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.txtOrçamento);
-            this.groupBox3.Controls.Add(this.lblOrçamentos);
+            this.groupBox3.Controls.Add(this.txtOrcamento);
+            this.groupBox3.Controls.Add(this.lblOrcamentos);
             this.groupBox3.Location = new System.Drawing.Point(37, 83);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(315, 86);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
-            // txtOrçamento
+            // txtOrcamento
             // 
-            this.txtOrçamento.Location = new System.Drawing.Point(97, 21);
-            this.txtOrçamento.Name = "txtOrçamento";
-            this.txtOrçamento.Size = new System.Drawing.Size(100, 22);
-            this.txtOrçamento.TabIndex = 1;
+            this.txtOrcamento.Location = new System.Drawing.Point(97, 21);
+            this.txtOrcamento.Name = "txtOrcamento";
+            this.txtOrcamento.Size = new System.Drawing.Size(100, 22);
+            this.txtOrcamento.TabIndex = 1;
             // 
-            // lblOrçamentos
+            // lblOrcamentos
             // 
-            this.lblOrçamentos.AutoSize = true;
-            this.lblOrçamentos.Location = new System.Drawing.Point(128, 55);
-            this.lblOrçamentos.Name = "lblOrçamentos";
-            this.lblOrçamentos.Size = new System.Drawing.Size(44, 16);
-            this.lblOrçamentos.TabIndex = 0;
-            this.lblOrçamentos.Text = "label3";
+            this.lblOrcamentos.AutoSize = true;
+            this.lblOrcamentos.Location = new System.Drawing.Point(128, 55);
+            this.lblOrcamentos.Name = "lblOrcamentos";
+            this.lblOrcamentos.Size = new System.Drawing.Size(44, 16);
+            this.lblOrcamentos.TabIndex = 0;
+            this.lblOrcamentos.Text = "label3";
             // 
             // label2
             // 
@@ -152,8 +152,8 @@
         private System.Windows.Forms.Button btnVoltarInicio;
         private System.Windows.Forms.Button btndefinirOrçamento;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txtOrçamento;
-        private System.Windows.Forms.Label lblOrçamentos;
+        private System.Windows.Forms.TextBox txtOrcamento;
+        private System.Windows.Forms.Label lblOrcamentos;
         private System.Windows.Forms.Label label2;
     }
 }

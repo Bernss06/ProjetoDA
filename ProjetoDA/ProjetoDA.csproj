@@ -82,12 +82,6 @@
     <Compile Include="models\ShoppingContext.cs" />
     <Compile Include="models\TipoArtigo.cs" />
     <Compile Include="models\Utilizador.cs" />
-    <Compile Include="views\Artigos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="views\Artigos.Designer.cs">
-      <DependentUpon>Artigos.cs</DependentUpon>
-    </Compile>
     <Compile Include="views\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,29 +94,11 @@
     <Compile Include="views\FormRegistro.Designer.cs">
       <DependentUpon>FormRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\ModoCompra.cs">
+    <Compile Include="views\Orcamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ModoCompra.Designer.cs">
-      <DependentUpon>ModoCompra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="views\Orçamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="views\Orçamento.Designer.cs">
-      <DependentUpon>Orçamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="views\Planeamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="views\Planeamento.Designer.cs">
-      <DependentUpon>Planeamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="views\TiposArtigo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="views\TiposArtigo.Designer.cs">
-      <DependentUpon>TiposArtigo.cs</DependentUpon>
+    <Compile Include="views\Orcamento.Designer.cs">
+      <DependentUpon>Orcamento.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -142,8 +118,8 @@
     <EmbeddedResource Include="views\FormRegistro.resx">
       <DependentUpon>FormRegistro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\Orçamento.resx">
-      <DependentUpon>Orçamento.cs</DependentUpon>
+    <EmbeddedResource Include="views\Orcamento.resx">
+      <DependentUpon>Orcamento.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
