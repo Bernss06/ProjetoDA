@@ -16,5 +16,13 @@ namespace ProjetoDA
         {
             InitializeComponent();
         }
+
+        private void btnorcamento_Click(object sender, EventArgs e)
+        {
+            // Abre a view de Orçamento e esconde o Form1
+            var orcamentoForm = new views.Orcamento();
+            orcamentoForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -145,6 +145,7 @@
             this.btnorcamento.TabIndex = 1;
             this.btnorcamento.Text = "Orçamentos";
             this.btnorcamento.UseVisualStyleBackColor = true;
+            this.btnorcamento.Click += new System.EventHandler(this.btnorcamento_Click);
             // 
             // btninicio
             // 
