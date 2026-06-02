@@ -86,7 +86,7 @@
             this.btnRegisto.TabIndex = 5;
             this.btnRegisto.Text = "Registrar";
             this.btnRegisto.UseVisualStyleBackColor = true;
-            this.btnRegisto.Click += new System.EventHandler(this.btnRegistrar_Click);
+         
             // 
             // btnJatenho
             // 
@@ -96,7 +96,6 @@
             this.btnJatenho.TabIndex = 6;
             this.btnJatenho.Text = "Já tenho conta";
             this.btnJatenho.UseVisualStyleBackColor = true;
-            this.btnJatenho.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormRegistro
             // 

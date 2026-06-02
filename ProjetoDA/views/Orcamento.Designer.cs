@@ -124,7 +124,7 @@
             this.btnVoltarInicio.TabIndex = 0;
             this.btnVoltarInicio.Text = "<- Inicio";
             this.btnVoltarInicio.UseVisualStyleBackColor = true;
-            this.btnVoltarInicio.Click += new System.EventHandler(this.btnVoltarInicio_Click_1);
+            this.btnVoltarInicio.Click += new System.EventHandler(this.btnVoltarInicio_Click);
             // 
             // Orcamento
             // 

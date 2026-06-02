@@ -32,7 +32,7 @@ namespace ProjetoDA.views
             _anoSelecionado = DateTime.Now.Year;
 
             // Registar handlers
-            this.Load += Orçamento_Load;
+          
             this.btndefinirOrçamento.Click += btndefinirOrçamento_Click;
             this.btnVoltarInicio.Click += btnVoltarInicio_Click;
         }
@@ -41,12 +41,6 @@ namespace ProjetoDA.views
         public Orcamento(Form1 parent) : this()
         {
             _parent = parent;
-        }
-
-        private void Orçamento_Load(object sender, EventArgs e)
-        {
-            // Carrega o orçamento da base de dados
-            CarregarOrcamento();
         }
 
         private void CarregarOrcamento()
@@ -62,7 +56,7 @@ namespace ProjetoDA.views
                     txtOrcamento.Text = orcamentoAtual.ValorMaximo.ToString("N2", CultureInfo.CurrentCulture);
 
                     // Atualiza a label do Form1 se houver um parent
-                    _parent?.AtualizarOrcamentoLabel(orcamentoAtual.ValorMaximo);
+                    _parent?    .AtualizarOrcamentoLabel(orcamentoAtual.ValorMaximo);
                 }
                 else
                 {
@@ -100,7 +94,16 @@ namespace ProjetoDA.views
 
             try
             {
-                bool sucesso = _orcamentoController.salvarOuAtualizarOrcamento(_mesSelecionado, _anoSelecionado, valor, _utilizadorLogadoId);
+                // Recupera o ID atual do utilizador da sessão (não usa o valor armazenado no construtor)
+                int userId = SessionManager.UtilizadorLogadoId;
+                
+                if (userId == 0)
+                {
+                    MessageBox.Show("Erro: Nenhum utilizador logado. Por favor, faça login novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                bool sucesso = _orcamentoController.salvarOuAtualizarOrcamento(_mesSelecionado, _anoSelecionado, valor, userId);
 
                 if (sucesso)
                 {
@@ -124,16 +127,16 @@ namespace ProjetoDA.views
 
         private void btnVoltarInicio_Click(object sender, EventArgs e)
         {
-            // Se houver um Form1 que abriu este formulário, volta a mostrar esse Form1
+            // Se temos referência ao Form1 parent, mostra-o novamente
             if (_parent != null)
             {
                 _parent.Show();
             }
             else
-            {
-                // Caso contrário, cria uma nova instância (comportamento antigo)
-                Form1 login = new Form1();
-                login.Show();
+            {                                               
+                // Caso contrário, cria uma nova instância
+                Form1 form1 = new Form1();
+                form1.Show();
             }
 
             // Esconde o formulário atual

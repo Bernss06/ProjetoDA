@@ -37,12 +37,11 @@ namespace ProjetoDA.views
 
                 this.Hide();
 
+                // Usar Show() em vez de ShowDialog() para não bloquear a execução
                 Form1 form1 = new Form1();
-                form1.ShowDialog();
+                form1.Show();
 
-                // Limpa a sessão ao fechar o login
-                SessionManager.ClearSession();
-                this.Close();
+                // Não fecha esta janela imediatamente - deixa que Form1 execute livremente
             }
             else
             {

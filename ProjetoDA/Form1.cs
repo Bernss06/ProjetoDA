@@ -15,12 +15,20 @@ namespace ProjetoDA
         public Form1()
         {
             InitializeComponent();
+            // Quando o Form1 é fechado, limpar a sessão
+            this.FormClosing += Form1_FormClosing;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Limpa a sessão ao fechar o Form1
+            SessionManager.ClearSession();
         }
 
         private void btnorcamento_Click(object sender, EventArgs e)
         {
-            // Abre a view de Orçamento com o ID do utilizador logado
-            var orcamentoForm = new views.Orcamento();
+            // Abre a view de Orçamento passando uma referência a este Form1
+            var orcamentoForm = new views.Orcamento(this);
             orcamentoForm.Show();
             this.Hide();
         }
@@ -33,6 +41,12 @@ namespace ProjetoDA
                 planeamentoForm.Show();
                 this.Hide();
             
+        }
+
+        public void AtualizarOrcamentoLabel(int valor)
+        {
+            // Atualiza a label com o novo valor do orçamento
+            // lblOrcamento.Text = valor.ToString("C");
         }
     }
 }

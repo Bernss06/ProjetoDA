@@ -16,9 +16,17 @@ namespace ProjetoDA.views
         public FormRegistro()
         {
             InitializeComponent();
+            // Registar os handlers dos botões
+            this.btnRegisto.Click += BtnRegistrar_Click;
+            this.btnJatenho.Click += Button1_Click;
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void FormRegistro_Load(object sender, EventArgs e)
+        {
+            // Método chamado quando o formulário é carregado
+        }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
@@ -57,25 +65,16 @@ namespace ProjetoDA.views
                 // Alerta caso o Username já exista na base de dados (Regra 4)
                 MessageBox.Show("Erro: Este Username já está a ser utilizado por outro membro!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            {
-
-            }
         }
-
-        private void button1_Click(object sender, EventArgs e)
+                                                                                                                                                                                                                                                                                                        
+        private void Button1_Click(object sender, EventArgs e)
         {
             FormLogin login = new FormLogin();
             login.Show();
 
             // Esconde o formulário de registo
             this.Hide();
-
         }
 
-        private void FormRegistro_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
