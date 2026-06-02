@@ -13,18 +13,18 @@ using ProjetoDA.controllers;
 
 namespace ProjetoDA.views
 {
-    public partial class Orçamento : Form
+    public partial class Orcamento : Form
     {
         private readonly OrcamentoController _orcamentoController;
         private readonly int _utilizadorLogadoId;
         private int _mesSelecionado;
         private int _anoSelecionado;
 
-        public Orçamento(int utilizadorLogadoId)
+        public Orcamento()
         {
             InitializeComponent();
             _orcamentoController = new OrcamentoController();
-            _utilizadorLogadoId = utilizadorLogadoId;
+            _utilizadorLogadoId = 0; // Substitua 0 pelo valor correto do utilizador logado
             _mesSelecionado = DateTime.Now.Month;
             _anoSelecionado = DateTime.Now.Year;
 
@@ -49,13 +49,13 @@ namespace ProjetoDA.views
 
                 if (orcamentoAtual != null)
                 {
-                    lblOrçamentos.Text = FormatCurrency(orcamentoAtual.ValorMaximo);
-                    txtOrçamento.Text = orcamentoAtual.ValorMaximo.ToString("N2", CultureInfo.CurrentCulture);
+                    lblOrcamentos.Text = FormatCurrency(orcamentoAtual.ValorMaximo);
+                    txtOrcamento.Text = orcamentoAtual.ValorMaximo.ToString("N2", CultureInfo.CurrentCulture);
                 }
                 else
                 {
-                    lblOrçamentos.Text = "Ainda sem orçamento definido";
-                    txtOrçamento.Text = string.Empty;
+                    lblOrcamentos.Text = "Ainda sem orçamento definido";
+                    txtOrcamento.Text = string.Empty;
                 }
             }
             catch (Exception ex)
@@ -67,7 +67,7 @@ namespace ProjetoDA.views
         private void btndefinirOrçamento_Click(object sender, EventArgs e)
         {
             // Validação e gravação do orçamento
-            var texto = txtOrçamento.Text?.Trim();
+            var texto = txtOrcamento.Text?.Trim();
             if (string.IsNullOrEmpty(texto))
             {
                 MessageBox.Show("Introduza um valor para o orçamento.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
