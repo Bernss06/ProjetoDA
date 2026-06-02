@@ -20,6 +20,9 @@ namespace ProjetoDA.views
         private int _mesSelecionado;
         private int _anoSelecionado;
 
+        // Referência ao Form1 que abriu este formulário (pode ser null)
+        private Form1 _parent;
+
         public Orcamento()
         {
             InitializeComponent();
@@ -32,6 +35,12 @@ namespace ProjetoDA.views
             this.Load += Orçamento_Load;
             this.btndefinirOrçamento.Click += btndefinirOrçamento_Click;
             this.btnVoltarInicio.Click += btnVoltarInicio_Click;
+        }
+
+        // Construtor que recebe o Form1 para permitir atualização da label no Form1
+        public Orcamento(Form1 parent) : this()
+        {
+            _parent = parent;
         }
 
         private void Orçamento_Load(object sender, EventArgs e)
@@ -51,6 +60,9 @@ namespace ProjetoDA.views
                 {
                     lblOrcamentos.Text = FormatCurrency(orcamentoAtual.ValorMaximo);
                     txtOrcamento.Text = orcamentoAtual.ValorMaximo.ToString("N2", CultureInfo.CurrentCulture);
+
+                    // Atualiza a label do Form1 se houver um parent
+                    _parent?.AtualizarOrcamentoLabel(orcamentoAtual.ValorMaximo);
                 }
                 else
                 {
@@ -93,6 +105,10 @@ namespace ProjetoDA.views
                 if (sucesso)
                 {
                     CarregarOrcamento();
+
+                    // Notifica o Form1 (se existir) para atualizar a label com o novo valor
+                    _parent?.AtualizarOrcamentoLabel(valor);
+
                     MessageBox.Show("Orçamento guardado com sucesso.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -108,11 +124,19 @@ namespace ProjetoDA.views
 
         private void btnVoltarInicio_Click(object sender, EventArgs e)
         {
-            // Fecha o formulário atual (volta para o formulário anterior)
-            Form1 login = new Form1();
-            login.Show();
+            // Se houver um Form1 que abriu este formulário, volta a mostrar esse Form1
+            if (_parent != null)
+            {
+                _parent.Show();
+            }
+            else
+            {
+                // Caso contrário, cria uma nova instância (comportamento antigo)
+                Form1 login = new Form1();
+                login.Show();
+            }
 
-            // Esconde o formulário de registo
+            // Esconde o formulário atual
             this.Hide();
         }
 
@@ -120,6 +144,11 @@ namespace ProjetoDA.views
         {
             // Formata conforme cultura do utilizador, com símbolo de moeda
             return string.Format(CultureInfo.CurrentCulture, "{0:C}", valor);
+        }
+
+        private void btnVoltarInicio_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
