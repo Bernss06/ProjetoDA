@@ -26,8 +26,8 @@ namespace ProjetoDA.views
             // Verifica se algum dos campos está vazio ou apenas com espaços
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Por favor, preencha todos os campos!",
-                                "Campos Obrigatórios",
+                MessageBox.Show("Por favor, preencha todos os campos obrigatórios!",
+                                "Campos Vazios",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
                 return; // Interrompe a execução do método aqui para não registar
