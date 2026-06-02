@@ -16,5 +16,19 @@ namespace ProjetoDA.views
         {
             InitializeComponent();
         }
+
+        private void btnVoltarInicio_Click(object sender, EventArgs e)
+        {
+            // Se houver um Form1 que abriu este formulário, volta a mostrar esse Form1
+            
+           
+                // Caso contrário, cria uma nova instância (comportamento antigo)
+                Form1 form1 = new Form1();
+                form1.Show();
+            
+
+            // Esconde o formulário atual
+            this.Hide();
+        }
     }
 }

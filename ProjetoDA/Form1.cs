@@ -24,5 +24,15 @@ namespace ProjetoDA
             orcamentoForm.Show();
             this.Hide();
         }
+
+        private void btnplaneamento_Click(object sender, EventArgs e)
+        {
+            
+                // Abre a view de Planeamento e esconde o Form1
+                var planeamentoForm = new views.Planeamento();
+                planeamentoForm.Show();
+                this.Hide();
+            
+        }
     }
 }

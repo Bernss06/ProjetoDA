@@ -146,9 +146,6 @@ namespace ProjetoDA.views
             return string.Format(CultureInfo.CurrentCulture, "{0:C}", valor);
         }
 
-        private void btnVoltarInicio_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
