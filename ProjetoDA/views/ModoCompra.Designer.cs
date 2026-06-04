@@ -1,6 +1,6 @@
 ﻿namespace ProjetoDA.views
 {
-    partial class Modo_Compra
+    partial class ModoCompra
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,181 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numArtigo = new System.Windows.Forms.NumericUpDown();
+            this.comboTipoArtigo = new System.Windows.Forms.ComboBox();
+            this.comboArtigo = new System.Windows.Forms.ComboBox();
+            this.btnAddItem = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnVoltarInicio = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSavePlan = new System.Windows.Forms.Button();
+            this.btnRemoveItem = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numArtigo)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.numArtigo);
+            this.groupBox1.Controls.Add(this.comboTipoArtigo);
+            this.groupBox1.Controls.Add(this.comboArtigo);
+            this.groupBox1.Controls.Add(this.btnAddItem);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(113, 52);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(319, 397);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Adicionar Item";
+            // 
+            // numArtigo
+            // 
+            this.numArtigo.Location = new System.Drawing.Point(129, 195);
+            this.numArtigo.Name = "numArtigo";
+            this.numArtigo.Size = new System.Drawing.Size(166, 22);
+            this.numArtigo.TabIndex = 6;
+            // 
+            // comboTipoArtigo
+            // 
+            this.comboTipoArtigo.FormattingEnabled = true;
+            this.comboTipoArtigo.Location = new System.Drawing.Point(129, 60);
+            this.comboTipoArtigo.Name = "comboTipoArtigo";
+            this.comboTipoArtigo.Size = new System.Drawing.Size(166, 24);
+            this.comboTipoArtigo.TabIndex = 5;
+            // 
+            // comboArtigo
+            // 
+            this.comboArtigo.FormattingEnabled = true;
+            this.comboArtigo.Location = new System.Drawing.Point(129, 126);
+            this.comboArtigo.Name = "comboArtigo";
+            this.comboArtigo.Size = new System.Drawing.Size(166, 24);
+            this.comboArtigo.TabIndex = 4;
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddItem.Location = new System.Drawing.Point(82, 279);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(171, 42);
+            this.btnAddItem.TabIndex = 3;
+            this.btnAddItem.Text = "Adicionar";
+            this.btnAddItem.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 197);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Quantidade:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(77, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tipo:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 129);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome do Artigo:";
+            // 
+            // btnVoltarInicio
+            // 
+            this.btnVoltarInicio.Location = new System.Drawing.Point(12, 12);
+            this.btnVoltarInicio.Name = "btnVoltarInicio";
+            this.btnVoltarInicio.Size = new System.Drawing.Size(101, 34);
+            this.btnVoltarInicio.TabIndex = 3;
+            this.btnVoltarInicio.Text = "<- Inicio";
+            this.btnVoltarInicio.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnSavePlan);
+            this.groupBox2.Controls.Add(this.btnRemoveItem);
+            this.groupBox2.Controls.Add(this.listBox1);
+            this.groupBox2.Location = new System.Drawing.Point(451, 52);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(319, 397);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnSavePlan
+            // 
+            this.btnSavePlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavePlan.Location = new System.Drawing.Point(65, 340);
+            this.btnSavePlan.Name = "btnSavePlan";
+            this.btnSavePlan.Size = new System.Drawing.Size(200, 40);
+            this.btnSavePlan.TabIndex = 8;
+            this.btnSavePlan.Text = "Guardar Planeamento";
+            this.btnSavePlan.UseVisualStyleBackColor = true;
+            // 
+            // btnRemoveItem
+            // 
+            this.btnRemoveItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveItem.Location = new System.Drawing.Point(65, 283);
+            this.btnRemoveItem.Name = "btnRemoveItem";
+            this.btnRemoveItem.Size = new System.Drawing.Size(200, 41);
+            this.btnRemoveItem.TabIndex = 7;
+            this.btnRemoveItem.Text = "Remover item selecionado";
+            this.btnRemoveItem.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(21, 22);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(268, 244);
+            this.listBox1.TabIndex = 0;
+            // 
+            // ModoCompra
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Modo_Compra";
+            this.ClientSize = new System.Drawing.Size(788, 480);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnVoltarInicio);
+            this.Controls.Add(this.groupBox2);
+            this.Name = "ModoCompra";
+            this.Text = "ModoCompra";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numArtigo)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.NumericUpDown numArtigo;
+        private System.Windows.Forms.ComboBox comboTipoArtigo;
+        private System.Windows.Forms.ComboBox comboArtigo;
+        private System.Windows.Forms.Button btnAddItem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnVoltarInicio;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnSavePlan;
+        private System.Windows.Forms.Button btnRemoveItem;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
