@@ -109,6 +109,7 @@
             this.btnartigos.TabIndex = 5;
             this.btnartigos.Text = "Artigos";
             this.btnartigos.UseVisualStyleBackColor = true;
+            this.btnartigos.Click += new System.EventHandler(this.btnartigo_Click);
             // 
             // btntipoartigo
             // 

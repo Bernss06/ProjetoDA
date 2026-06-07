@@ -13,13 +13,18 @@ namespace ProjetoDA.views
 {
     public partial class Planeamento : Form
     {
+<<<<<<< HEAD
         private readonly ArtigoController _artigoController;
         private readonly TipoArtigoController _tipoArtigoController;
         private Form1 _parent;
+=======
+        
+>>>>>>> 6d5f55a8419b4c2e36c56acdcccee4c16c13c77a
 
         public Planeamento()
         {
             InitializeComponent();
+<<<<<<< HEAD
             _artigoController = new ArtigoController();
             _tipoArtigoController = new TipoArtigoController();
             
@@ -146,5 +151,11 @@ namespace ProjetoDA.views
         {
             // Não é necessário fazer nada especial aqui                
         }
+=======
+            
+        }
+
+        
+>>>>>>> 6d5f55a8419b4c2e36c56acdcccee4c16c13c77a
     }
 }

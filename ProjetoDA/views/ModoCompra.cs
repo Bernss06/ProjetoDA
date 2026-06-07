@@ -13,14 +13,19 @@ namespace ProjetoDA.views
 {
     public partial class ModoCompra : Form
     {
+<<<<<<< HEAD
         private readonly ArtigoController _artigoController;
         private readonly TipoArtigoController _tipoArtigoController;
         private readonly CompraController _compraController;
         private Form1 _parent;
+=======
+        
+>>>>>>> 6d5f55a8419b4c2e36c56acdcccee4c16c13c77a
 
         public ModoCompra()
         {
             InitializeComponent();
+<<<<<<< HEAD
             _artigoController = new ArtigoController();
             _tipoArtigoController = new TipoArtigoController();
             _compraController = new CompraController();
@@ -180,6 +185,11 @@ namespace ProjetoDA.views
         private void ModoCompra_FormClosing(object sender, FormClosingEventArgs e)
         {
             // Não é necessário fazer nada especial aqui
+=======
+           
+>>>>>>> 6d5f55a8419b4c2e36c56acdcccee4c16c13c77a
         }
+
+       
     }
 }
