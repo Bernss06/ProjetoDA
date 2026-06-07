@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoDA.controllers;
 
 namespace ProjetoDA.views
 {
-    public partial class Modo_Compra : Form
+    public partial class ModoCompra : Form
     {
-        public Modo_Compra()
+        
+
+        public ModoCompra()
         {
             InitializeComponent();
+           
         }
+
+       
     }
 }

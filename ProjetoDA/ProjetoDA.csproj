@@ -101,6 +101,12 @@
     <Compile Include="views\FormRegistro.Designer.cs">
       <DependentUpon>FormRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ModoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ModoCompra.Designer.cs">
+      <DependentUpon>ModoCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Orcamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FormRegistro.resx">
       <DependentUpon>FormRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ModoCompra.resx">
+      <DependentUpon>ModoCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Orcamento.resx">
       <DependentUpon>Orcamento.cs</DependentUpon>
