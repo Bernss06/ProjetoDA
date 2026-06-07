@@ -83,6 +83,12 @@
     <Compile Include="models\TipoArtigo.cs" />
     <Compile Include="models\Utilizador.cs" />
     <Compile Include="SessionManager.cs" />
+    <Compile Include="views\Artigos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Artigos.Designer.cs">
+      <DependentUpon>Artigos.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="views\Artigos.resx">
+      <DependentUpon>Artigos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
