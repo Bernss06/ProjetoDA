@@ -43,16 +43,6 @@ namespace ProjetoDA
             
         }
 
-        private void btnartigo_Click(object sender, EventArgs e)
-        {
-
-            // Abre a view de Artigos e esconde o Form1
-            var artigoForm = new views.Artigos();
-            artigoForm.Show();
-            this.Hide();
-
-        }
-
         public void AtualizarOrcamentoLabel(int valor)
         {
             // Atualiza a label com o novo valor do orçamento
